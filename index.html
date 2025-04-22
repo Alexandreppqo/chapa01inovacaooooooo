@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INOVAÇÃO 01</title>
+  <style>
+    :root {
+      --azul: #0B2545;
+      --amarelo: #FFD700;
+      --laranja: #FF6F00;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--azul);
+      color: var(--branco);
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    header {
+      background-color: var(--azul);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--amarelo);
+    }
+
+    .ul {
+      list-style: none;
+      display: flex;
+      gap: 2px;
+      overflow-x: auto;
+      padding: 1px 1;
+    }
+
+    .ul li {
+      flex: 5 5 auto;
+    }
+
+    .ul li a:hover {
+      color: var(--laranja);
+    }
+
+    .btn-gradient {
+      background: linear-gradient(45deg, var(--amarelo), var(--laranja));
+      color: var(--azul);
+      border: none;
+      padding: 10px 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-text {
+      flex: 1 1 300px;
+    }
+
+    .main-img {
+      flex: 1 1 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-img img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: var(--amarelo);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+    }
+
+    .carrossel-wrapper {
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+
+    .carrossel {
+      display: flex;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    .membro {
+      min-width: 150px;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .membro img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--amarelo);
+      margin-bottom: 10px;
+    }
+
+    .membro h4 {
+      margin: 5px 0;
+      color: var(--laranja);
+    }
+
+    .membro p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #06172B;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .ul {
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .ul::-webkit-scrollbar {
+        display: none;
+      }
+
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-img img {
+        max-width: 80%;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+     <nav>
+       <div class="logo" style="text-align: center; padding: 10px;">
+  <h1 style="font-size: 2rem; color: hellow; margin: 0;">CHAPA INOVAÇÃO 01</h1>
+</div>
+  <ul class="ul">
+    <li><a href="#quem-somos">QUEM SOMOS?</a></li>
+    <li><a href="#votar">VOTAR CHAPA 01?</a></li>
+    <li><a href="#propostas">PROPOSTAS</a></li>
+    <li><a href="https://www.instagram.com/chapa_inovacao2025?igsh=ZW5rcnhpZ2ptc21x" target="_blank"><button class="btn-gradient">INSTAGRAM</button></a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container content">
+      <div class="main-text">
+        <h1>VOTE CHAPA 01</h1>
+        <h2> Aponte a câmera para o QR Code ou aperte no botão e confira nosso perfil oficial. Não fique de fora das novidades!</h2>
+      </div>
+      <div class="main-img">
+        <img src="https://i.imgur.com/ONYNhft.png" alt="Instagram chapa 01">
+      </div>
+    </div>
+  </main>
+
+ <section id="quem-somos">
+  <h2>QUEM SOMOS NÓS?</h2>
+  <p style="text-align: justify;">
+    A Chapa Inovação é composta por 8 diretorias, além do presidente, vice-presidente e secretário(a), totalizando 11 estudantes ativos no curso. Escolhemos esse nome porque acreditamos que a mudança começa com novas ideias, novas perspectivas e a coragem de agir de forma diferente. A Chapa nasce do compromisso de transformar o centro acadêmico em um espaço mais dinâmico, participativo e alinhado com as reais necessidades dos estudantes. Inovar significa não se prender ao passado, mas aprender com ele para construir um futuro melhor. Nosso objetivo é trazer soluções eficientes, modernizar processos e fortalecer a representatividade estudantil, sempre com diálogo e transparência.
+  </p>
+
+    <div class="carrossel-wrapper">
+      <div class="carrossel">
+        <!-- 11 membros -->
+        <div class="membro"><img src="https://i.imgur.com/rRRiQVN.png"><h4>Karoline</h4><p>Presidente(a)</p></div>
+        <div class="membro"><img src="https://i.imgur.com/bG3Kwdi.png"><h4>Dione</h4><p>Dir. Departamento</p></div>
+        <div class="membro"><img src="https://i.imgur.com/lmjesYi.png"><h4>Alexandre</h4><p>Dir. Colegiado</p></div>
+        <div class="membro"><img src="https://i.imgur.com/g4m2CDk.png"><h4>Ricardo</h4><p>Dir. Comunicação</p></div>
+        <div class="membro"><img src="https://i.imgur.com/R2czhtU.jpeg"><h4>Erivelton</h4><p>Dir. Esportes</p></div>
+        <div class="membro"><img src="https://i.imgur.com/SBRctB1.jpeg"><h4>André</h4><p>Financeiro</p></div>
+        <div class="membro"><img src="https://i.imgur.com/UAG2Psf.jpeg"><h4>Wilderline</h4><p>Vice-presidente(a)</p></div>
+        <div class="membro"><img src="https://i.imgur.com/5a6jVhN.jpeg"><h4>Emerson</h4><p>Dir. Qualidade</p></div>
+        <div class="membro"><img src="https://i.imgur.com/AbFihss.jpeg"><h4>Amanda</h4><p>Gestao de Pessoas</p></div>
+        <div class="membro"><img src="https://i.imgur.com/5qMQeug.jpeg"><h4>Ruan</h4><p>Dir. Cultura</p></div>
+        <div class="membro"><img src="https://i.imgur.com/rgb9SJ9.jpeg"><h4>Maria</h4><p>Secretário(a)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="votar">
+  <h2>POR QUE VOTAR NA CHAPA 01?</h2>
+  <p style="text-align: justify;">
+    Apresentamos propostas concretas, realizáveis e pensadas para transformar positivamente o cotidiano do nosso Campus.
+    Priorizamos a escuta ativa e a participação democrática de todos os estudantes.
+    Defendemos a valorização da cultura, do esporte e da educação por meio de eventos que unam e inspirem.
+    Temos um olhar atento à saúde mental e ao respeito no ambiente escolar, promovendo o bem-estar coletivo.
+    Atuamos com total transparência, compromisso e responsabilidade em todas as nossas ações.
+  </p>
+</section>
+
+<section id="propostas">
+  <h2>NOSSAS PROPOSTAS</h2>
+  <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Criação do NeonCABAfest</h3>
+      <p>Festa voltada à recepção dos novos alunos, incentivando a convivência entre calouros e veteranos, fortalecendo laços de amizade e proporcionando interações além do ambiente acadêmico.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Criação de um Guia do Calouro</h3>
+      <p>Com informações essenciais sobre o curso, estrutura acadêmica e vida universitária, facilitando a adaptação dos novos alunos.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Desenvolver ações estratégicas</h3>
+      <p>No âmbito da representação discente, frente a problemáticas coletivas associadas às disciplinas com altos índices de reprovação e/ou trancamento (superiores a 51%).</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Estágios Remunerados e de Qualidade</h3>
+      <p>Assegurar oportunidades de estágio dentro e fora da universidade, garantindo condições justas e remuneração adequada para todos os estudantes.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Expansão do "CABA Acolhe"</h3>
+      <p>Fortalecer a recepção de novos estudantes com atividades mais interativas, promovendo integração e acolhimento desde o início.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Garantir a presença constante dos representantes do CA</h3>
+      <p>Manter a sala do centro de convivência aberta durante a maior parte do dia para melhor atendimento aos estudantes.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Garantir descontos especiais no ENAG</h3>
+      <p>Incentivar a participação no evento por meio de parcerias e negociações.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Implementar um portal de transparência</h3>
+      <p>Divulgação de ações, decisões e gestão financeira do Centro Acadêmico de forma clara e acessível.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Mapa de Localização para o ENAG</h3>
+      <p>Desenvolver um mapa detalhado para orientar os alunos que participarão do evento, facilitando a navegação e o acesso aos espaços.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Melhoria na Impressão</h3>
+      <p>Implementar um plano eficaz de manutenção da impressora, com reposição regular de papel e tinta para garantir o uso contínuo.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Produzir um boletim informativo mensal</h3>
+      <p>Enviado por e-mail ou em formato PDF, com atualizações sobre as ações do CA, eventos e novidades do curso.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Promover eventos culturais, esportivos e de confraternização</h3>
+      <p>Fortalecer a integração entre alunos de todas as turmas e estabelecer parcerias com outros Centros Acadêmicos.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Realizar enquetes e pesquisas periódicas</h3>
+      <p>Identificar as principais dificuldades enfrentadas pelos alunos no curso e buscar soluções acadêmicas eficazes.</p>
+    </div>
+    <div style="background-color: white; color: black; padding: 20px; border-radius: 10px; max-width: 800px; width: 100%;">
+      <h3 style="color: #FFD700;">Solicitar melhorias na estrutura física do CA</h3>
+      <p>Nova placa de identificação, instalação de ar-condicionado e computadores, além de organização do espaço.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="contatos">
+    <h2>Contatos</h2>
+    <p>
+      Instagram: <a href="https://www.instagram.com/chapa_inovacao2025?igsh=ZW5rcnhpZ2ptc21x" target="_blank">@chapa_inovacao2025</a><br>
+      Email: <a href="x" target="_blank">chapa01inovacao@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Inovação 01. Todos os direitos reservados -PAWER BY ALEXANDRE 2025©.
+  </footer>
+</body>
+</html>
